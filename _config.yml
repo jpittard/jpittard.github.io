@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://jpittard.github.io
+title: jpittard
+tagline: Log
+description: Technical notes
+paginate: 5
