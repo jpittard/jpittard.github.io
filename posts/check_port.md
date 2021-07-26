@@ -10,3 +10,9 @@ SSH-2.0-OpenSSH_5.3
 $curl telnet://10.135.5.219:8888
 (hangs)
 ```
+
+In PowerShell:
+
+```
+test-netconnection -ComputerName server.domain.local -Port 443
+```
