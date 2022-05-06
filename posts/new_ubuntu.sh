@@ -3,9 +3,12 @@
 export DOCKER_BUILDKIT=1
 
 alias dev="cd /mnt/c/_dev ; ls -1"
-sudo setcap CAP_NET_BIND_SERVICE=+eip /usr/bin/ssh
 alias tunnels="echo 'Starting tunnels' ; pkill ssh ; ssh tunnels -N &"
 alias docker='podman'
+
+# Allow podman and ssh tunnels to run on 443
+sudo net.ipv4.ip_unprivileged_port_start=443
+sudo setcap CAP_NET_BIND_SERVICE=+eip /usr/bin/ssh
 
 function build_and_push() {
   local REPO_NAME=$1
