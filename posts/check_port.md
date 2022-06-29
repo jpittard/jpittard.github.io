@@ -14,5 +14,5 @@ $curl telnet://10.135.5.219:8888
 In PowerShell:
 
 ```
-test-netconnection -ComputerName server.domain.local -Port 443
+tnc server.domain.local -p 443
 ```
