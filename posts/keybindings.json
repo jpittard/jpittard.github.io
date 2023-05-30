@@ -1,0 +1,18 @@
+// VSCode keybindings
+[
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "\n$LINE_COMMENT============================= $0"
+        }
+    },{
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "\n$LINE_COMMENT============================= $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE $0"
+        }
+    }
+]
