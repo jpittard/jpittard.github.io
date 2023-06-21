@@ -1,0 +1,5 @@
+# tar on Mac without extra files
+tar --disable-copyfile --exclude='.DS_Store' -cvzf file.tar.gz folder
+
+# Untar without extra warnings
+tar --warning=no-unknown-keyword -xzvf file.tar.gz
